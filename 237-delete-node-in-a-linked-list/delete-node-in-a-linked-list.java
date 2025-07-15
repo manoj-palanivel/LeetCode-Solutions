@@ -8,8 +8,8 @@
  */
 class Solution {
     public void deleteNode(ListNode node) {
-        node.val = node.next.val;
+         node.val = node.next.val;
+        // Skip the next node
         node.next = node.next.next;
-
     }
 }
